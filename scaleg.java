@@ -1,6 +1,6 @@
 import com.phidget22.*;
 
-public class PhidgetScale2_g {
+public class scaleg {
     public static void main(String[] args) throws Exception{
 
         //Create
