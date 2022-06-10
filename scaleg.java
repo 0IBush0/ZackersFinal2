@@ -1,6 +1,6 @@
 import com.phidget22.*;
 
-public class scaleg {
+public class PhidgetScale2_g {
     public static void main(String[] args) throws Exception{
 
         //Create
@@ -8,22 +8,19 @@ public class scaleg {
         
         //Open
         scale.open(1000);
-         
+        
         //Use your Offset Value
-        double offsetValue =  9.954208512769178E-5;
+        double offsetValue = 3.530131654595086E-5;
         
         //Use your Phidgets
         while(true)
         {
+            //Calculate Weight in kg
+            double weight = (4700 * (scale.getVoltageRatio() - offsetValue)) * 1000;
 
-            //Calculate Weight (kg) 
-            double weight = (4700 * (scale.getVoltageRatio() - offsetValue));
-            
-            //Display Weight
-            System.out.println(String.format("%.3f kg", weight));      
-            
+            System.out.println(String.format("%.3f g", weight));      
+            //display weight in g            
             Thread.sleep(250);
-            
         }
     }    
 }
