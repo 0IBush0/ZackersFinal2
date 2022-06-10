@@ -1,3 +1,5 @@
+package phidgetscale;
+
 import com.phidget22.*;
 
 public class autocalc 
@@ -9,6 +11,7 @@ public class autocalc
         double average = 0;
         int count = 0;
         System.out.println("Averaging Value...");
+        //print out value
         while(count < 64)
         {
             average += scale.getVoltageRatio();
