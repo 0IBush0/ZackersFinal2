@@ -1,3 +1,5 @@
+package phidgetscale;
+
 import com.phidget22.*;
 
 public class scaleg {
