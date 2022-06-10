@@ -1,11 +1,7 @@
-
-package scalecalibration;
-
-//Add Phidgets Library
 import com.phidget22.*;
 import java.util.Scanner;
 
-public class ScaleCalibration {
+public class ScaleCali {
     //Define
     static VoltageRatioInput scale;
     
