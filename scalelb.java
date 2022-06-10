@@ -15,7 +15,6 @@ public class PhidgetScale2_lb {
         //Use your Phidgets
         while(true)
         {
-            //Calculate Weight (kg)
             double weight = (4700 * (scale.getVoltageRatio() - offsetValue)) * 2.205;
             
             System.out.println(String.format("%.3f lb", weight));      
