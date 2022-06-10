@@ -2,7 +2,7 @@ package scalekit
 
 import com.phidget22.*;
 
-public class PhidgetScale {
+public class scaleoffset {
     public static void main(String[] args) throws Exception{
         //Create
         VoltageRatioInput scale = new VoltageRatioInput();
